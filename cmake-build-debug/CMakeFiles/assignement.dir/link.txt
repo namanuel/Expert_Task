@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/assignement.dir/src/assigment.c.o CMakeFiles/assignement.dir/src/helper.c.o CMakeFiles/assignement.dir/src/hashmap.c.o  -o assignement 
