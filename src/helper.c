@@ -78,6 +78,16 @@ int statisticFileWriter(char *output, char *statistic, int count) {
     char key_string[count][WORDBUFFSIZE];
     FILE *f = fopen(output, "r");
     FILE *s = fopen(statistic, "w");
+    if(f == 0){
+        printHelp();
+        printf("ERROR COULD NOT OPEN THE FILE");
+        return EXIT_FAILURE;
+    }
+    if (s == 0){
+        printHelp();
+        printf("ERROR COULD NOT OPEN THE FILE");
+        return EXIT_FAILURE;
+    }
     char storage[WORDBUFFSIZE];
     struct statistic statisticarray[count];
     char helper[WORDBUFFSIZE] = {0};
